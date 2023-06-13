@@ -71,8 +71,8 @@ $(".btnsDetM6 .clsbtnM6").click((e)=>{
 
 
 $(".detbtnM6").click((e)=>{
-  //","mailTemplate"
-  let templates = ["portifolioV2","dailyLiturgy","bibleAPI","foodDev","chessGame","chatApp"]
+  //""
+  let templates = ["portifolioV2","dailyLiturgy","bibleAPI","foodDev","chessGame","chatApp","mailTemplate"]
   let objAtt = e.currentTarget.getAttribute("page");
   templates.includes(objAtt) ? window.location.href = "projects/"+objAtt+'.html' : alert("Em desenvolvimento");
 })
