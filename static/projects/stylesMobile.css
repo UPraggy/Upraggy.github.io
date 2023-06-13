@@ -93,6 +93,11 @@
     height: 25px;
   }
 
+	
+.carouselM1 {
+    width: 80%;
+    height: calc(80vw *0.5);
+}
 /*______- M7 -______*/
 
   #midContent7 {
