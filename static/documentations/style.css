@@ -189,3 +189,32 @@ pre div{
     border-radius: 0px;
     border: 0px solid #ffffff;
   }
+
+
+#mainIcon{
+  position: fixed;
+  z-index: 3;
+  width: 60px;
+  aspect-ratio: 1/1;
+  bottom: 85px;
+  right: 6px;
+}
+
+#mainIcon #mainSubIcon{
+  background-image: url(/static/documentations/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 767px){
+
+  #mainIcon{
+    position: fixed;
+    width: 13%;
+    aspect-ratio: 1/1;
+    right: 1%;
+  }
+
+}
