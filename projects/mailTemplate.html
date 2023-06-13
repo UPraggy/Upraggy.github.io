@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Portifólio</title>
-	<link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../static/projects/styles.css">
   <link rel="stylesheet" type="text/css" href="../static/projects/stylesMobile.css">
 	<link rel="stylesheet" type="text/css" href="../static/styledFonts.css">
 	<link rel="stylesheet" type="text/css" href="../static/personalizedAnimations.css">
 	<link rel="stylesheet" type="text/css" href="../static/themeBtn.css">
+
+	<link rel="stylesheet" type="text/css" href="../static/projects/styleCarousel.css">
 </head>
 <body>
 	<div id="contentMain">
@@ -70,20 +72,35 @@
 		
 
 		<div id="midContent1" class="midContent allCenter">
-			<div id="titleM1">Daily Liturgy</div>
-			<video id="videoM1" controls autoplay muted>
-				<source src="../static/videos/dailyLiturgy.mp4" type="video/mp4">
-			</video>
+			<div id="titleM1">Mail Template</div>
+			
+			<div class="carouselM1" >
 
-			<div class="textMidM1">App criado com o objetivo consumir uma Api criada por mim que realiza o WebScrapping da liturgia do dia, disponibilizando as leituras com funcionalidades de leitura em modo noturno e redimensionamento de letra.</div>
-			<div class="textMidM1">Ainda nessa perspectiva, ele foi feito em paralelo com o aprendizado sobre JavaScript, ReactNative e Node, oque pode tanto aperfeiçoar o trabalho com esse tipo de linguagem, como támbem auxiliar no entendimento na hora de documentar. Nesse contexto, a primeira versão da Api foi feita utilizando a biblioteca x-ray, visto que para alguns testes foi utilizado um servidor online que continha limitações e junto com a Api foi feita a interface utilizando fecth para integrar a Api com o aplicativo Entretando, após os testes, foi utilizado o puppeteer para realizar o WebScrapping, mesmo gerando a necessidade de contratar os serviços de um sevidor privado, foi algo benéfico, visto que há um ganho de velocidade. </div>
-			<div class="textMidM1">Vale ressaltar, que esse projeto foi integrado com outros em um só aplicativo na PlayStore.</div>
+			<div class="carouselVideos">
+				<video class="carVideoM1" controls autoplay muted>
+					<source src="../static/videos/trailer_automail.mp4" type="video/mp4">
+				</video>
+				<video class="carVideoM1" controls muted>
+					<source src="../static/videos/cad_automail.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="carOpts">
+				<div class="subOpts" key="1"></div>
+				<div class="subOpts" key="2"></div>
+			</div>
+
+			</div>
+
+
+			<div class="textMidM1">O projeto AutoMail foi inpirado com base em uma necessidade de armazenar e-mails, personaliza-los e enviar, tudo em um só aplicativo, lembrando que o usuário pode ou não configurar o e-mail de envio.</div>
+			<div class="textMidM1">Conforme o supracitado a comunicação e renderização das páginas foram feitas com Django como base, que é basicamente é um framework web full stack open source (código aberto) baseado em Python, ele foi responsável por integrar a biblioteca Smpt permitindo o envio de e-mails, além de gerenciar a base de dados, armazenando os e-mails enviados e templates.</div>
+			<div class="textMidM1">Ainda Nessa perspectiva, o envio via SMTP pode ou não ser configurado, caso não seja, o template é enviado ao e-mail do usuario e caso ele deseje, poderá encaminha-lo depois. Além disso, este projeto pode ser ampliado de outras formas, como o próprio design, vale dizer,  que foi colocado o maximo de personalizações que um email pode ter, visto que a uma limitação.</div>
 
 
 			<div id="linkM1">
-				<div id="projetoLinkM1">Projeto: <div id="ativoProjM1" link="https://play.google.com/store/apps/details?id=com.anonymous.AgoraVai">Ativo</div></div>
-				<div id="gitLinkM1">GitHub: <div id="gtSubM1" link="https://github.com/UPraggy/LDG_ReactApps"></div></div>
-				<!-- <div id="presLinkM1">Apresentação: <div id="presSubM1" link=""></div></div> -->
+				<div id="projetoLinkM1">Projeto: <div id="desativadoProjM1" link="">Desativado</div></div>
+				<div id="gitLinkM1">GitHub: <div id="gtSubM1" link="https://github.com/UPraggy/projectdjango/tree/master/automail"></div></div>
 			</div>
 		</div>
 		
@@ -138,6 +155,7 @@
   integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="../static/script.js"></script> 
+<script type="text/javascript" src="../static/scriptCarousel.js"></script> 
 
 <script type="text/javascript">
 	$("#linkM1 div div").click((e)=>{
