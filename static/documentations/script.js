@@ -1,4 +1,26 @@
+//Renderiza documentação
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const urlDoc = urlParams.get('doc')
 
+//setTitle
+$(document).attr('title', urlDoc)
+//setIcon
+$("#favicon").attr("href", "static/icons/" + urlParams.get('img') + ".png");
+
+fetch("documts/"+urlDoc + ".html")
+  .then(val => val.text())
+  .then((html) => {
+
+    var parser = new DOMParser();
+
+    var doc = parser.parseFromString(html, "text/html");
+
+    let documentation = doc.querySelector('body').innerHTML;
+
+    $("#content").append(documentation);
+    callModifications();
+  })
 
 
 //habilita copia de codigo
