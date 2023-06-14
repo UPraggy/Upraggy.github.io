@@ -5,23 +5,12 @@
   margin-bottom: 3%;
   align-self: center;
 }
-<<<<<<< HEAD
-
 @media (max-width: 767px){
   .carouselM1 {
       width: 80%;
       height: calc(80vw *0.5);
   }
 }
-
-=======
-@media (max-width: 767px){
-.carouselM1 {
-    width: 80%;
-    height: calc(80vw *0.5);
-}
-}
->>>>>>> f55050799d4049a40d87fab6a6c4076ffd13d326
 .carouselVideos{
   display:flex; 
   height: 80%;
