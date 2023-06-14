@@ -696,6 +696,10 @@ a{
   display: flex;
 }
 
+#projetos .titleTopCont {
+    width: 100%;
+}
+
 .imgM6{
 	position: relative;
 	width: 100%;
@@ -704,6 +708,7 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
+  border: 3px solid #767676;
 }
 
 #projsM6{
@@ -745,18 +750,19 @@ a{
 	font-size: 0.5em;
 }
 
-#portProjM6 .imgM6{
+
+#portProjM6 .imgM6, #detPortProjM6 .imgDetM6{
 	background-image: url('imgs/portProj.png');
 }
 
-#dailyProjM6 .imgM6{
+#dailyProjM6 .imgM6, #detDailyProjM6 .imgDetM6{
 	background-image: url('imgs/dailyLitProj.png');
 }
 #dailyProjM6 .modalM6{
 	font-size: 2em;
 }
 
-#bibleProjM6 .imgM6{
+#bibleProjM6 .imgM6, #detBibleProjM6 .imgDetM6{
 	background-image: url('imgs/bibleApiProj.png');
 }
 #bibleProjM6 .modalM6{
@@ -764,20 +770,42 @@ a{
 }
 
 
-#chessProjM6 .imgM6{
+#chessProjM6 .imgM6, #detChessProjM6 .imgDetM6{
 	background-image: url('imgs/chessGm.png');
 }
 
-#chatProjM6 .imgM6{
+#chatProjM6 .imgM6, #detChatProjM6 .imgDetM6{
 	background-image: url('imgs/chatApp.png');
 }
 
-#mailProjM6 .imgM6{
+#mailProjM6 .imgM6, #detMailProjM6 .imgDetM6{
 	background-image: url('imgs/mailTemp.png');
 }
 
-#foodDevProjM6 .imgM6{
+#foodDevProjM6 .imgM6, #detFoodProjM6 .imgDetM6{
 	background-image: url('imgs/foodDev.png');
+}
+
+#safrFashnProjM6 .imgM6, #detSafrFashnProjM6 .imgDetM6{
+	background-image: url('imgs/safiraFshn.png');
+}
+#gerncHotelProjM6 .imgM6, #detGerncHotelProjM6 .imgDetM6{
+	background-image: url('imgs/gerencHotel.png');
+}
+
+#gerncHotelProjM6 .modalM6{
+	font-size: 1.7em;
+}
+
+
+#gerFlhProjM6 .imgM6, #detGerFlhProjM6 .imgDetM6{
+	background-image: url('imgs/geraFolha.png');
+}
+#DocsProjM6 .imgM6, #detDocsProjM6 .imgDetM6{
+	background-image: url('imgs/docsProj.png');
+}
+#Portv1ProjM6 .imgM6, #detPortv1ProjM6 .imgDetM6{
+	background-image: url('imgs/portv1Proj.png');
 }
 
 
@@ -889,29 +917,6 @@ a{
 	flex: 1;
 	background-color: #000;
 	margin-left: 0.2%;
-}
-
-
-#detPortProjM6 .imgDetM6{
-	background-image: url('imgs/portProj.png');
-}
-#detDailyProjM6 .imgDetM6{
-	background-image: url('imgs/dailyLitProj.png');
-}
-#detBibleProjM6 .imgDetM6{
-	background-image: url('imgs/bibleApiProj.png');
-}
-#detChessProjM6 .imgDetM6{
-	background-image: url('imgs/chessGm.png');
-}
-#detChatProjM6 .imgDetM6{
-	background-image: url('imgs/chatApp.png');
-}
-#detMailProjM6 .imgDetM6{
-	background-image: url('imgs/mailTemp.png');
-}
-#detFoodProjM6 .imgDetM6{
-	background-image: url('imgs/foodDev.png');
 }
 
 
