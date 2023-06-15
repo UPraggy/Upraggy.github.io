@@ -75,7 +75,6 @@ a{
   cursor: pointer;
   color: #CC3302;
 }
-
 #menuBurguer{
   display: flex;
   flex-direction: row;
