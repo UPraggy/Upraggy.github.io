@@ -72,7 +72,8 @@ a{
 	font-family: 'Cardo', serif;
 }
 #topMenu .topMenuLab:hover{
-  cursor: pointer
+  cursor: pointer;
+  color: #CC3302;
 }
 #menuBurguer{
   display: flex;
