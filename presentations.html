@@ -3,17 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Portifólio</title>
-	<link rel="icon" type="image/x-icon" href="../static/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="../static/projects/styles.css">
-  <link rel="stylesheet" type="text/css" href="../static/projects/stylesMobile.css">
-	<link rel="stylesheet" type="text/css" href="../static/styledFonts.css">
-	<link rel="stylesheet" type="text/css" href="../static/personalizedAnimations.css">
-	<link rel="stylesheet" type="text/css" href="../static/themeBtn.css">
-
-
-	<link rel="stylesheet" type="text/css" href="../static/themeBtn.css">
-
+	<title>Portfólio</title>
+	<link rel="icon" type="image/x-icon" href="static/imgs/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="static/presentation/styles.css">
+  <link rel="stylesheet" type="text/css" href="static/presentation/stylesMobile.css">
+	<link rel="stylesheet" type="text/css" href="static/styledFonts.css">
+	<link rel="stylesheet" type="text/css" href="static/personalizedAnimations.css">
+	<link rel="stylesheet" type="text/css" href="static/themeBtn.css">
 </head>
 <body>
 	<div id="contentMain">
@@ -22,8 +18,8 @@
       <div id="menuBurguer">
         <a href="https://upraggy.github.io/"><div class="topMenuLab">Pagina Inicial</div></a>
         <a href="https://upraggy.github.io/#projetos"><div class="topMenuLab">Projetos</div></a>
-        <a href=""><div class="topMenuLab">Apresentações</div></a>
-        <a href=""><div class="topMenuLab">Documentações</div></a>
+        <a href="https://upraggy.github.io/presentations.html"><div class="topMenuLab">Apresentações</div></a>
+        <a href="https://upraggy.github.io/documentations.html"><div class="topMenuLab">Documentações</div></a>
       </div>
 			<div id="themeTemp">
 				<label for="theme" class="theme">
@@ -74,27 +70,18 @@
 		
 
 		<div id="midContent1" class="midContent allCenter">
-
+			<div id="titleM1">Apresentações</div>
 			
-
-
-
-			<div id="titleM1">Portifólio V2</div>
-			<video class="videoM1" controls autoplay muted>
-				<source src="../static/videos/portifoliov2.mp4" type="video/mp4">
-			</video>
-
-			<div class="textMidM1">WebSite desenvolvido com objetivo em divulgar meus trabalhos, como apresentação, projetos, informações no geral. Nesse contexto, ele contém a alteração de temas, easter-eggs e futuramente um modo de linguagem.</div>
-			<div class="textMidM1">Conforme o supracitado, para a interface foi utilizado Web (HTML, CSS, JS) em geral e seu host foi atráves do github, visto que foi considerado como meio mais barato e eficiente, como meu segundo portfólio ele pôde cumprir o objetivo de ser mais organizado e estruturado que o primeiro, além de aprimorar a questão de design, visto que tem-se como objeto principal a apresentação. </div>
-			<div class="textMidM1">Vale ressaltar, que o processo de criação do mesmo, foi utilizando plataforma como Canvas e Figma, além de outros sites e inspirações, tanto no youtube, quanto pesquisa em diversos locais.</div>
-
-			<div id="linkM1">
-				<div id="projetoLinkM1">Projeto: <div id="ativoProjM1" link="https://rafaelmr.com.br">Ativo</div></div>
-				<div id="gitLinkM1">GitHub: <div id="gtSubM1" link="https://github.com/UPraggy/Upraggy.github.io"></div></div>
-				<!-- <div id="presLinkM1">Apresentação: <div id="presSubM1" link=""></div></div> -->
+			<div id="presImgs">
+				<div id="webSocket" class="presSubImgs" link="https://www.canva.com/design/DAFKJhxDbZM/9q9ZlQgJw9CrFLLfgC9mTg/view?utm_content=DAFKJhxDbZM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></div>
+				<div id="mySql" class="presSubImgs" link="https://www.canva.com/design/DAFVfp1O8I4/HdmXDcTC7ijFwawCyWl40Q/edit?utm_content=DAFVfp1O8I4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></div>
+				<div id="sql" class="presSubImgs" link="https://www.canva.com/design/DAFPr9e_Xso/xGbPHrFnuHsw5mBOH28p9g/view?utm_content=DAFPr9e_Xso&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></div>
+				<div id="dataScience" class="presSubImgs" link="https://www.linkedin.com/pulse/data-science-machine-learning-python-rafael-moreira-ramos-de-rezende/"></div>
 			</div>
-		</div>
 		
+
+
+		</div>
 
 	<div id="midContent7" class="midContent allCenter">
 
@@ -147,9 +134,8 @@
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="../static/script.js"></script> 
 
-
 <script type="text/javascript">
-	$("#linkM1 div div").click((e)=>{
+	$(".presSubImgs").click((e)=>{
 		let objLink = e.currentTarget.getAttribute('link')
 		window.location.href = objLink;
 	})
