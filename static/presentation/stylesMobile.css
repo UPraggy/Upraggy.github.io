@@ -92,6 +92,14 @@
   #linkM1 div div {
     height: 25px;
   }
+	
+
+#presImgs .presSubImgs {
+    flex: 0 0 80%;
+	}
+#presImgs {
+    justify-content: center;
+	}
 
 /*______- M7 -______*/
 
