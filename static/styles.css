@@ -540,7 +540,7 @@ a{
 
 #midContent4 .titleTopCont{
 	  position: absolute;
-	  width: 100%;
+	  width: 96%;
 	  color: #000;
 }
 
@@ -612,7 +612,7 @@ a{
 
 
 #midContent5 .titleTopCont{
-	  width: 100%;
+	  width: 96%;
 	  color: #000;
 	  margin-left: 5%;
 }
@@ -635,13 +635,16 @@ a{
 }
 
 
-
+#educSM5{
+	padding-bottom: 5%;
+}
 .educM5{
 	width: 40%;
 	flex-direction: column;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: var(--educ-color);
+	
 }
 
 .tTM5{
@@ -719,8 +722,8 @@ a{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  max-width: 90%;
-  min-width: 90%;
+  max-width: 100%;
+  min-width: 100%;
   flex: 1;
 }
 .projM6{
