@@ -108,3 +108,62 @@ $("#logoImgM1").click(()=>{
 })
 //
 
+
+
+// SCROOL EVENT 
+
+window.addEventListener('scroll', function(event) {
+
+
+
+
+
+
+  // M2 elements
+  
+  const imgM2 = returnScrollPosObj("#imgM2")
+  if (imgM2.top/(window.pageYOffset) > 1.8){
+    imgM2.objeto.style.transform = `scale(1.4)`
+
+  }else if (imgM2.top/(window.pageYOffset) < 2 && imgM2.top/(window.pageYOffset) > 1){
+    imgM2.objeto.style.transform = `scale(${imgM2.top/(window.pageYOffset)})`
+
+  }else{
+    imgM2.objeto.style.transform = `scale(1)`
+  }
+
+  const titleM2 = returnScrollPosObj("#titleM2")
+  if (titleM2.position > 0 && titleM2.position < 1000){
+    titleM2.objeto.style.transform = `translateX(${titleM2.top - (window.pageYOffset*0.8)}px)`
+  }else{
+    titleM2.objeto.style.transform = `translateX(0px)`
+  }
+
+
+  const textP1M2 = returnScrollPosObj("#textP1M2")
+  if (textP1M2.position > 200 && textP1M2.position < 1000){
+    textP1M2.objeto.style.transform = `translateY(${textP1M2.top*0.10}px)`
+  }else{
+    textP1M2.objeto.style.transform = `translateY(0px)`
+  }
+
+  
+  const textP2M2 = returnScrollPosObj("#textP2M2")
+  if (textP2M2.position > 200 && textP2M2.position < 1000){
+    textP2M2.objeto.style.transform = `translateY(${textP2M2.top*0.10}px)`
+  }else{
+    textP2M2.objeto.style.transform = `translateY(0px)`
+  }
+
+
+ });
+
+
+ function returnScrollPosObj(query){
+
+  const objHTML = document.querySelector(query)
+  const objTop = objHTML.getBoundingClientRect().top
+  const objPos = objTop - (window.pageYOffset*0.8)
+
+  return {objeto: objHTML,top: objTop, position: objPos}
+ }
