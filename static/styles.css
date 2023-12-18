@@ -362,10 +362,12 @@ a{
   -webkit-filter: drop-shadow(5px 5px 6px #222222dd);
   filter: drop-shadow(5px 5px 6px #222222dd);
   /*filter: dropShadow(x y blur? spread? color?), */
+
+  transition: transform 0.5s ease;
 }
 
 #rightContentM2{
-	padding: 9% 2% 0 2%;
+	padding: 9% 2% 5% 2%;
 	height: 100%;
 	max-width: 70%;
 }
@@ -375,6 +377,8 @@ a{
 	font-weight: 700;
 	font-size: 4em;
 	margin-bottom: 2%;
+	position: absolute;
+	transition: transform 0.5s ease;
 }
 
 #textP1M2{
@@ -382,12 +386,15 @@ a{
 	font-weight: 200;
 	font-size: 2em;
 	margin-bottom: 2%;
+	margin-top: 10%;
+	transition: transform 0.5s ease;
 }
 
 #textP2M2{
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 2em;
+	transition: transform 0.5s ease;
 }
 
 /*______M3______*/
